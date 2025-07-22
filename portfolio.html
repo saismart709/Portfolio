@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teja - Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* Dark blue-gray background */
+            color: #e5e7eb; /* Light gray text */
+        }
+        .skill-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.2), 0 4px 6px -2px rgba(99, 102, 241, 0.1);
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #4f46e5, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-title {
+            border-left: 4px solid #4f46e5;
+            padding-left: 1rem;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Main Container -->
+    <div class="container mx-auto max-w-6xl p-4 sm:p-6 lg:p-8">
+
+        <!-- Header Section -->
+        <header class="flex flex-col sm:flex-row items-center justify-between mb-12">
+            <div class="flex items-center space-x-6 mb-6 sm:mb-0">
+                <div class="relative">
+                    <img class="h-24 w-24 sm:h-32 sm:w-32 rounded-full object-cover border-4 border-indigo-500 shadow-lg" src="https://i.postimg.cc/k4Ad5jP3/Whats-App-Image-2024-07-22-at-10-53-15-AM.jpg" alt="Teja's Profile Picture" onerror="this.onerror=null;this.src='https://placehold.co/128x128/1f2937/e5e7eb?text=Teja';">
+                    <span class="absolute bottom-0 right-0 block h-5 w-5 rounded-full bg-green-400 border-2 border-gray-800"></span>
+                </div>
+                <div>
+                    <h1 class="text-3xl sm:text-4xl font-bold text-white">Teja</h1>
+                    <p class="text-indigo-300 text-lg">Full Stack Developer & AI Prompt Engineer</p>
+                </div>
+            </div>
+            <div class="flex space-x-4">
+                <a href="https://www.instagram.com/mr_teja_05_19?igsh=aXlsYW1wdHQ4OXZh" target="_blank" class="text-gray-400 hover:text-pink-500 transition-colors duration-300">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+                <a href="tel:7036607389" class="text-gray-400 hover:text-green-500 transition-colors duration-300">
+                    <i class="fas fa-phone-alt fa-2x"></i>
+                </a>
+                 <a href="https://github.com" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-300">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+            </div>
+        </header>
+
+        <!-- About Me Section -->
+        <section id="about" class="mb-16">
+             <h2 class="text-3xl font-bold mb-6 section-title text-white">About Me</h2>
+            <p class="text-lg leading-relaxed text-gray-300">
+                I am a versatile and passionate developer with a strong foundation in both frontend and backend technologies. My expertise spans from creating responsive and dynamic user interfaces with <span class="font-semibold text-indigo-300">HTML, CSS, and JavaScript</span>, to building robust server-side applications with <span class="font-semibold text-indigo-300">Python and Java</span>. I am proficient in modern frameworks like <span class="font-semibold text-indigo-300">Angular</span> and skilled in managing databases like <span class="font-semibold text-indigo-300">SQL and MongoDB</span>. Recently, I've expanded my skillset into the exciting field of <span class="font-semibold text-indigo-300">AI Prompt Engineering</span>, leveraging AI tools to create innovative solutions. I thrive on learning new technologies and solving complex problems.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 section-title text-white">My Technical Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Frontend Skills -->
+                <div class="skill-card bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-code fa-2x text-indigo-400 mr-4"></i>
+                        <h3 class="text-2xl font-semibold text-white">Frontend</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><i class="fab fa-html5 text-orange-500 mr-2"></i> HTML5</li>
+                        <li><i class="fab fa-css3-alt text-blue-500 mr-2"></i> CSS3</li>
+                        <li><i class="fab fa-js-square text-yellow-400 mr-2"></i> JavaScript (ES6+)</li>
+                    </ul>
+                </div>
+
+                <!-- Backend Skills -->
+                <div class="skill-card bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-server fa-2x text-indigo-400 mr-4"></i>
+                        <h3 class="text-2xl font-semibold text-white">Backend</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><i class="fab fa-python text-green-500 mr-2"></i> Python</li>
+                        <li><i class="fab fa-java text-red-500 mr-2"></i> Java</li>
+                        <li><i class="fas fa-microchip text-gray-400 mr-2"></i> C</li>
+                    </ul>
+                </div>
+
+                <!-- Databases -->
+                <div class="skill-card bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-database fa-2x text-indigo-400 mr-4"></i>
+                        <h3 class="text-2xl font-semibold text-white">Databases</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><i class="fas fa-database text-cyan-400 mr-2"></i> SQL</li>
+                        <li><i class="fas fa-leaf text-green-400 mr-2"></i> MongoDB</li>
+                    </ul>
+                </div>
+
+                <!-- Tools & Frameworks -->
+                <div class="skill-card bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-tools fa-2x text-indigo-400 mr-4"></i>
+                        <h3 class="text-2xl font-semibold text-white">Tools & Frameworks</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><i class="fab fa-git-alt text-orange-600 mr-2"></i> Git / <i class="fab fa-github"></i> GitHub</li>
+                        <li><i class="fab fa-angular text-red-600 mr-2"></i> Angular</li>
+                    </ul>
+                </div>
+
+                <!-- AI Prompting -->
+                <div class="skill-card bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-robot fa-2x text-indigo-400 mr-4"></i>
+                        <h3 class="text-2xl font-semibold text-white">AI Prompting</h3>
+                    </div>
+                     <p class="text-gray-300">
+                        Skilled in crafting effective prompts for various AI tools to generate desired outputs, optimize workflows, and create innovative solutions.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="text-center">
+            <h2 class="text-3xl font-bold mb-4 gradient-text">Get In Touch</h2>
+            <p class="text-lg text-gray-300 mb-6">I'm currently available for freelance work and new opportunities. Feel free to reach out!</p>
+            <a href="mailto:nookalasaiteja709@gmail.com" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105 inline-block shadow-lg">
+                Email Me
+            </a>
+            <div class="mt-8 flex justify-center space-x-6">
+                <a href="https://www.instagram.com/mr_teja_05_19?igsh=aXlsYW1wdHQ4OXZh" target="_blank" class="text-gray-400 hover:text-pink-500 transition-colors duration-300">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+                <a href="https://github.com" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-300">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+                <a href="tel:7036607389" class="text-gray-400 hover:text-green-500 transition-colors duration-300">
+                    <i class="fas fa-phone-alt fa-2x"></i>
+                </a>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center p-6 mt-12 border-t border-gray-700">
+        <p class="text-gray-500">&copy; 2024 Teja. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
