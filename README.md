@@ -1,5 +1,5 @@
 # simple Portfolio website 
-#This Portfolio website tech stack :
+This Portfolio website tech stack :
 Html
 css,
 js.
